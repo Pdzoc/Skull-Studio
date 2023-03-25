@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./imgs/hanging-rope-gb932e831a_640.png" alt="rope" id="rope">
+        <h1>Skull</h1>
+        <h1>Studi&nbsp;</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#stories">Stories</a>
+        <a href="#splide01">Opinions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <article id="home">
+            <h2>Hello Stranger!</h2>
+            <p>Welcome to Skull Studio - this is my site with stories.</p>
+            <p>I create scary stories since high school. Writing was always my hobby, but lastly, I decided to release my best stories.</p>
+            <p>Enjoy the stories and feel free to contact me, if you have any questions.</p>
+            <p>Mike</p>
+        </article>
+        <article id="stories">
+            <h2>Dark Sea</h2>
+            <div>
+                <img src="./imgs/boating-g280ed1610_640.png" alt="skull captain">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at, maiores repudiandae nisi itaque cum optio eveniet ipsum commodi quod, asperiores quasi aliquam error consectetur impedit dolores! Natus, ad omnis. <a href="#">More</a></p>
+        </div>
+        </article>
+        <article >
+            <h2>Creepy Castle</h2>
+            <div class="rev">
+            <img src="./imgs/crown-g065fc06ce_640.png" alt="skull with crown" style="filter: grayscale(100%);">
+            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reiciendis cum veritatis ducimus iste obcaecati magnam id fugiat quia officiis quae hic aliquam, in nulla! Amet quae non ut eum. <a href="#">More</a></p>
+        </div>
+        </article>
+    </main>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <h3>Awesome! - Big Book Store</h3>
+                  </li>
+                  <li class="splide__slide">
+                      <h3>Scary and funny! - Reviews Masters</h3>
+                  </li>
+                  <li class="splide__slide">
+                      <h3>Great stories! - Stanislav Kos</h3>
+                  </li>
+                  <li class="splide__slide">
+                      <h3>I promise: You will have fun until the last page! - M. T. Librarian</h3>
+                  </li>
+              </ul>
+        </div>
+      </section>
+    <footer>
+        <img src="./imgs/skull-with-crown-g671c9985c_1280.png" alt="skull with crown on the table" >
+        <div id="contact">
+            <img src="./imgs/facebook-g585b338a1_640.png" alt="facebook">
+            <img src="./imgs/youtube-gf8ebeb4f3_640.png" alt="youtube">
+            <img src="./imgs/twitter-g9cd4e3a0f_640.png" alt="twitter">
+            <img src="./imgs/instagram-g1e38f7043_640.png" alt="instagram">
+        </div>
+    </footer>
+    <script>
+        new Splide( '.splide' ).mount();
+    </script>
+</body>
+</html>

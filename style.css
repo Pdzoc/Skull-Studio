@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lacquer", cursive;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#rope {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  left: 68%;
+  transform-origin: top;
+  animation: swing 2500ms ease-in-out alternate infinite;
+}
+
+@keyframes swing {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+header {
+  text-align: center;
+  font-size: xx-large;
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+header h1:first-of-type {
+  margin-bottom: -45px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+p {
+  font-size: larger;
+}
+
+#home p {
+  margin-bottom: -1px;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav a {
+  margin-right: 7px;
+  margin-bottom: 7px;
+  background: black;
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+article {
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+article div {
+  display: flex;
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+article img {
+  max-width: 37%;
+  margin: 20px;
+  align-self: flex-start;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+}
+footer div {
+  border-top: 2px dotted;
+  padding-top: 4px;
+}
+footer div img {
+  width: 64px;
+  border-radius: 100%;
+  filter: contrast(150%);
+}
+footer div img:hover {
+  cursor: pointer;
+  border: 2px solid;
+}
+
+footer > img {
+  max-height: 250px;
+  max-width: 100%;
+}
+
+#splide01 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.splide h3 {
+  padding: 0px 70px;
+}
+
+button.splide__pagination__page.is-active {
+  background-color: black;
+}
+
+a:hover {
+  animation: blood ease 1500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blood {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
+}
+@media screen and (max-width: 600px) {
+  .splide {
+    width: 90%;
+    margin: auto;
+  }
+  article, nav, footer {
+    width: 90%;
+  }
+  article div, article .rev, nav div, nav .rev, footer div, footer .rev {
+    flex-direction: column;
+  }
+  article div img, article .rev img, nav div img, nav .rev img, footer div img, footer .rev img {
+    align-self: center;
+  }
+}
+@media screen and (min-width: 601px) {
+  .splide {
+    width: 75%;
+    margin: auto;
+  }
+  article, nav, footer {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 801px) {
+  .splide {
+    width: 60%;
+    margin: auto;
+  }
+  article, nav, footer {
+    width: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */
